@@ -18,3 +18,5 @@ HTML is very good for the visual components of the website, such as headers, tex
 I am not aware of any bugs at this time.
 
 Future work I would like to put into this program would be enabling the user to delete entries, or change fields of previous entries, i.e. updating the status of a proejct if they've finished it.
+
+Credit: Professor Lisa Dion, provided starter code 
