@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- TODO: Update author -->
+        <meta name="author" content="Darby Lane">
+        <title>Testing!</title>
+        <!-- TODO: Update description -->
+        <meta name="description" content="Use this website to keep track of your yarn projects!">
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    </head>
+    <body>
+    	<header>
+    		<h1>CS 2300</h1>
+    		<h2>M3OEP</h2>
+            <!-- TODO: Update heading -->
+    		<h3>Yarn Projects</h3>
+    	</header>
+        <!-- This is where it calls process.php when you submit the file -->
+        <!-- this is the element which gets user input and passes it to the php file-->
+        <form enctype="multipart/form-data" action="process.php" method="POST">
+            <label for="project">Choose the type of yarn project:</label>
+            <select name="project" id="project">
+                <option value="Knitting_Project">Knitting Project</option>
+                <option value="Crochet_Project">Crochet Project</option>
+            </select> <br><br>
+
+            <label for="name">Project Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="status">Choose the status of the project:</label>
+            <select name="status" id="status">
+                <option value="not_started">Not Yet Started</option>
+                <option value="in_progress">In Progress</option>
+                <option value="completed">Completed</option>
+            </select> <br><br>
+
+            <label for="link">Link to Pattern:</label>
+            <input type="text" id="link" name="link"><br><br>
+
+            <label for="yarn_weight">Yarn Weight:</label>
+            <input type="number" id="yarn_weight" name="yarn_weight" required><br><br>
+
+            <label for="yarn_yards">Yards of Yarn Needed:</label>
+            <input type="number" id="yarn_yards" name="yarn_yards" required><br><br>
+
+            <label for="yarn_color">Color of Yarn:</label>
+            <input type="text" id="yarn_color" name="yarn_color" required><br><br>
+
+            <label for="details">Other Project Details:</label>
+            <input type="text" id="details" name="details" required><br><br>
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
